@@ -1,0 +1,463 @@
+/*reset para limpiar pantalla*/
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background: #b6ffc0;
+}
+
+header{
+    height: 100px;
+    background: #3a5f3f;
+    padding: 0 50px;
+    color: #e3f8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #f59f1d;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8em;
+}
+
+.menu a{
+    color: #f59f1d;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.45s;
+}
+
+.mostrar-menu, 
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+    color: #f59f1d;
+    font-size: 4em;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #f5f11d;
+}
+
+#check{
+    display: none;
+}
+
+/*BANNER*/
+.banner1{
+    background-image: url(../Imagenes/tucan_pecho_amarillo.jpg);
+}
+
+.banner2{
+    background-image: url(../Imagenes/banner1.jpg);
+}
+
+.banner3{
+    background-image: url(../Imagenes/banner2.webp);
+}
+
+.banner4{
+    background-image: url(../Imagenes/mono-aullador.jpg);
+}
+
+#banner{
+    padding: 0 50px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Poner capa oscura encima de la imagen*/
+#banner::before{
+    content: '';
+    background: rgba(214, 88, 159, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    left: 0;
+}
+
+
+/*EDITAR TEXTO SOBRE BANNER*/
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+    
+}
+
+.contenido-banner h3 span{
+    color: #C4E4FF;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f59f1d;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+
+.boton-empezar:hover{
+    background: #f59f1d;
+}
+
+
+.about-title{
+    text-align: start;
+}
+
+.about-title-center{
+    text-align: center;
+}
+
+.about-section{
+    flex-direction: column;
+}
+
+#personas div ul{
+    list-style-type: circle;
+    text-align: start;color: #975d05;
+    font-size: 18px;
+}
+
+#personas div ul li{
+    padding: 10px 0;
+}
+
+#personas div ul li h5{
+    font-size: 1.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*PERSONAS*/
+#personas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#personas img{
+    border-radius: 100%;
+    max-width: 20em;
+}
+
+#personas div{
+    padding: 30px 25%;
+}
+
+#personas div h4{
+    color: #f59f1d;
+    font-size: 3em;
+    margin: 15px 0px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#personas div p{
+    color: #975d05;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #f59f1d;
+    padding: 10px 30px;
+    border: 3px solid #ffc876;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.boton-saber-mas:hover{
+    background: #f59f1d;
+    color: #fff;
+
+}
+
+/*ICONOS rgb(216, 149, 218)*/
+#iconos{
+    padding: 0px 50px;
+    background: rgba(5, 5, 5, 0.9);
+
+}
+
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(229, 255, 238, 0.2);
+}
+
+.contenido-iconos i{
+    color: #cc7d06;
+}
+
+.contenido-iconos div h6{
+    color: #f59f1d;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.contenido-iconos div p{
+    color: #975d05;
+    font-size: 15px;
+
+}
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#icono-mobile{
+    border: none;
+}
+
+/*FORMULARIO*/
+#contacto{
+    background: #3a5f3f;
+    padding: 50px 0px;
+    color: #cc7d06;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    background: #cc7d06;
+    border-radius: 10px;
+    border: 2px solid #cc7d06;
+    padding: 10px 5px;
+    outline: 0;
+    color: #000000;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #f8f66d;
+    box-shadow: 0 0 0 1px #f8f66d;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #000000;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton-formulario .boton-saber-mas{
+    display: block;
+    text-align: center;
+}
+
+footer{
+    background-color: rgba(5, 5, 5, 0.9);
+    color: #cc7d06;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer p{
+    font-size: 1.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*GALLERY*/
+#gallery{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#gallery div{
+    display: block;
+    padding: 10px 10px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 250px;
+    
+}  
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f59f1d;
+    font-size: 1.8em;
+}
+
+  * {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}  
+
+/*RESPONSIVE*/
+
+@media(max-width: 768px){
+    /*Galeria responsive*/
+    #gallery div{
+        padding: 5px 5px;
+    }
+    .responsive {
+        width: 100%;
+    }
+
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100hv; /*anchura de cualquier dispositivo*/
+        background: #3a5f3f;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        pad: 100px 0px;
+        z-index:100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        color: #cc7d06;
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        color: #f59f1d;
+        position: absolute;
+        top: 10px;
+        right: 80px;
+    }
+    
+    #check:checked~.menu{
+        right: 0;
+
+    }
+
+
+    /*PERSONAS*/
+    #personas{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #personas div{
+        padding: 10px 0%;
+    }
+
+    #personas div p{
+        text-align: justify;
+    }
+
+    #personas img{
+        border-radius: 100%;
+        max-width: 12em;
+    }
+
+    /*ICONOS*/
+    .contenido-iconos{
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+    }
+
+    .contenido-iconos div{
+        border-right: 2px solid rgba(216, 149, 218, 0);
+    }
+
+    .contenido-iconos div p{
+     text-align: justify;
+    }
+
+    /*FORMULARIO*/
+    .datos-form{
+        flex-direction: column;
+    }
+}
